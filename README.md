@@ -1,72 +1,45 @@
-📰 AI News Generator API
-This is a FastAPI-based web service that provides:
+## AI News Generator API 📰
 
-✅ Real-time News fetched from NewsAPI
+A FastAPI-based web service for generating AI-driven news content and fetching real-time news.
 
-✅ AI-Generated News using Google's Gemini API
+---
 
-✅ Simple & fast REST API endpoints
+### ✅ Features
+- Real-time news fetched from **NewsAPI**
+- AI-generated news summaries using **Google's Gemini API**
+- Simple & fast **REST API** endpoints
+- Built with **FastAPI**, **Gemini**, and **NewsAPI**
+- Interactive API docs using **Swagger UI**
+- Ready for deployment on **Railway**, **Render**, or **Heroku**
 
-✅ Built with FastAPI + Gemini + NewsAPI
+---
 
-📦 Features
-Get real-time news about any topic
+### ⚙️ Tech Stack
+- FastAPI
+- REST API
+- Google Generative AI (Gemini API)
+- NewsAPI
+- Uvicorn
+- NGINX
+- Python-dotenv
+- Requests
 
-Generate AI-based news summaries
+---
 
-Built-in /docs (Swagger UI) for testing APIs
+### 📦 Endpoints
 
-Easy to deploy on Railway / Render / Heroku
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Welcome Route |
+| GET | `/real-news?topic=technology` | Get real-time news |
+| GET | `/ai-news?topic=technology` | Get AI-generated news |
 
-⚙️ Requirements
-nginx
-Copy
-Edit
-requests
-fastapi
-python-dotenv
-google-generativeai
-uvicorn
-🛠️ Setup
-Clone the repository
+---
 
-bash
-Copy
-Edit
+### 🟣 Setup Instructions
+
+1. **Clone the Repository**
+
+```bash
 git clone https://github.com/YOUR-USERNAME/ai-news-generator.git
 cd ai-news-generator
-Create & update .env
-
-ini
-Copy
-Edit
-NEWSAPI_KEY=your_newsapi_key
-GEMINI_API_KEY=your_gemini_api_key
-Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the app
-
-bash
-Copy
-Edit
-uvicorn main:app --host 0.0.0.0 --port 8000
-🚀 API Endpoints
-Method	Endpoint	Description
-GET	/	Welcome Route
-GET	/real-news?topic=technology	Get real-time news
-GET	/ai-news?topic=technology	Get AI-generated news
-📚 API Documentation
-Once running, visit:
-👉 http://localhost:8000/docs (Swagger UI)
-
-🟣 Deployment Tip
-Use this as your Start Command on Railway:
-
-nginx
-Copy
-Edit
-uvicorn main:app --host 0.0.0.0 --port 8000
